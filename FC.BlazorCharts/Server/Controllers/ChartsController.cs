@@ -40,7 +40,6 @@ namespace FC.BlazorCharts.Server.Controllers
                     Y = doubleData
                 });
             }
-
             return myData;
         }
     }

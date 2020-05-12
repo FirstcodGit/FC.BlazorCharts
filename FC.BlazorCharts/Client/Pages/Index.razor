@@ -10,7 +10,6 @@
     protected override async Task OnInitializedAsync()
     {
         var ChartTitle = "Blazor CandleStick Chart";
-
         var response = await Http.GetFromJsonAsync<List<ChartsData>>("api/Charts");
 
         await jsRuntime.InvokeVoidAsync("ChartResult.starts", response, ChartTitle);
